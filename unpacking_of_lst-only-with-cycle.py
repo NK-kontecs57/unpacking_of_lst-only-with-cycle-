@@ -7,6 +7,6 @@ def unpacking_of_lst(lst_2):
             else:
                 new_lst.append(i)
         lst_2 = new_lst
-        if any(map(lambda x: type(x) is list, new_lst)) is False:
-            break
+        if any(map(lambda x: type(x) is list, new_lst)) is False:   # It seemed easier for me to make a check for a cycle stop here
+            break                                                   # Yes, i am strange or stupid... :)
     return lst_2
